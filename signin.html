@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+<style>
+    body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.login-box {
+    background-color: white;
+    padding: 100px 400px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.login-box h2 {
+    margin-bottom: 20px;
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 20px;
+    border-radius: 25px;
+    border: 1px solid #ccc;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.login-button {
+    background-color: #50c4aa;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-bottom: 10px;
+}
+
+.login-button:hover {
+    background-color: #3da68a;
+}
+
+.extra-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.extra-links a {
+    color: #666;
+    text-decoration: none;
+    font-size: 14px;
+    margin: 5px 0;
+}
+
+.extra-links a:hover {
+    text-decoration: underline;
+}
+@media (max-width: 480px) {
+    .login-box {
+        padding: 20px;
+    }
+
+    .login-box h2 {
+        font-size: 18px;
+    }
+
+    .input-group input {
+        padding: 8px;
+    }
+
+    .login-button {
+        padding: 8px 12px;
+    }
+
+    .extra-links a {
+        font-size: 12px;
+    }
+}
+</style>
+<body>
+    <div class="login-container">
+        <div class="login-box">
+            <h2>SIGN UP</h2>
+            <form>
+                <div class="input-group">
+                    <input type="text" placeholder="Email/Username">
+                </div>
+                <div class="input-group">
+                    <input type="password" placeholder="Password">
+                </div>
+                <button type="submit" class="login-button">LOGIN</button>
+                <div class="extra-links">
+                    <a href="#">Forgot Username/Password?</a>
+                    <a href="#">Create your Username!</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
